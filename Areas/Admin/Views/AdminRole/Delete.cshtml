@@ -1,0 +1,47 @@
+@model EcommerceWeb.Models.Role
+
+@{
+    ViewData["Title"] = "Delete Role";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <a asp-area="Admin" asp-controller="AdminRole" asp-action="Index" class="breadcrumb-item">Manage role</a>
+            <span class="breadcrumb-item active">Delete role</span>
+        </nav>
+    </div>
+</div>
+
+<div>
+    <h3>Are you sure you want to delete this role ?</h3>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Role Info</h4>
+            <div class="table-responsive">
+                <table class="product-info-table m-t-20">
+                    <tbody>
+                        <tr>
+                            <td>ID</td>
+                            <td class="text-dark font-weight-semibold">@Model.RoleId</td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>@Model.RoleName</td>
+                        </tr>
+                        <tr>
+                            <td>Descriptiton</td>
+                            <td>@Model.Description</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+        </div>
+    </div>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="RoleId" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+    </form>
+</div>

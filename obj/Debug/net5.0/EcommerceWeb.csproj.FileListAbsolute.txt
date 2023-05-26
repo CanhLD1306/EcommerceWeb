@@ -169,3 +169,10 @@ C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\_Vi
 C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_SideNavPartialView.cshtml.g.cs
 C:\Users\Canhl\Project\EcommerceWeb\bin\Debug\net5.0\package-lock.json
 C:\Users\Canhl\Project\EcommerceWeb\bin\Debug\net5.0\package.json
+C:\Users\Canhl\Project\EcommerceWeb\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Canhl\Project\EcommerceWeb\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminRole\Create.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminRole\Delete.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminRole\Details.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminRole\Edit.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminRole\Index.cshtml.g.cs
