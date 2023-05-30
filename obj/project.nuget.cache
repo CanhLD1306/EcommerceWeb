@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "U6A4eX2BPfLxC2R6wYgcaZEKeQaNC38KPwBmSYr1+BXWSWtLKDRofgRghR5JU4ItmTqHrIb8ZIwqlsQ7ep6pKg==",
+  "dgSpecHash": "o8JdPSqdE/fBmqEuoGsqz7k6oa5/nPQXMv99Ojnc7P+qXhAhodiLRxXEVCC5xwqZvREgRF2/y7hRzjQd9KepgA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Canhl\\Project\\EcommerceWeb\\EcommerceWeb.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Canhl\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
     "C:\\Users\\Canhl\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Canhl\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Canhl\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
@@ -84,7 +85,7 @@
     "C:\\Users\\Canhl\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\5.0.2\\microsoft.visualstudio.web.codegenerators.mvc.5.0.2.nupkg.sha512",
     "C:\\Users\\Canhl\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Canhl\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\Canhl\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Canhl\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Canhl\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Canhl\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\Canhl\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",

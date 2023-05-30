@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EcommerceWeb.Models;
+using AspNetCoreHero.ToastNotification.Abstractions;
 
 namespace EcommerceWeb.Areas.Admin.Controllers
 {
@@ -13,10 +14,12 @@ namespace EcommerceWeb.Areas.Admin.Controllers
     public class AdminRoleController : Controller
     {
         private readonly dbEcommerceContext _context;
+        private INotyfService _notifyService { get; }    
 
-        public AdminRoleController(dbEcommerceContext context)
+        public AdminRoleController(dbEcommerceContext context, INotyfService notifyService)
         {
             _context = context;
+            _notifyService = notifyService;
         }
 
         // GET: AdminRole
@@ -60,6 +63,7 @@ namespace EcommerceWeb.Areas.Admin.Controllers
             {
                 _context.Add(role);
                 await _context.SaveChangesAsync();
+                _notifyService.Success("Create new success");
                 return RedirectToAction(nameof(Index));
             }
             return View(role);
@@ -99,11 +103,13 @@ namespace EcommerceWeb.Areas.Admin.Controllers
                 {
                     _context.Update(role);
                     await _context.SaveChangesAsync();
+                    _notifyService.Success("Update Success");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!RoleExists(role.RoleId))
                     {
+                        _notifyService.Warning("Error");
                         return NotFound();
                     }
                     else
@@ -142,6 +148,7 @@ namespace EcommerceWeb.Areas.Admin.Controllers
             var role = await _context.Roles.FindAsync(id);
             _context.Roles.Remove(role);
             await _context.SaveChangesAsync();
+            _notifyService.Success("Delete Success");
             return RedirectToAction(nameof(Index));
         }
 

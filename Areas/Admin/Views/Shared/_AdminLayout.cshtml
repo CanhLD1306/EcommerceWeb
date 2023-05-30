@@ -9,6 +9,7 @@
     <link href="~/Adminassets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
     <link href="~/Adminassets/css/app.min.css" rel="stylesheet">
     
+    @await Component.InvokeAsync("Notyf")
     @await RenderSectionAsync("Styles", required: false)
 </head>
 <body>
@@ -145,6 +146,7 @@
 
     <!-- Core JS -->
     <script src="~/Adminassets/js/app.min.js"></script>
+    @await Component.InvokeAsync("Notyf")
     @await RenderSectionAsync("Scripts",required:false)
 </body>
 </html>

@@ -1,0 +1,99 @@
+@model IEnumerable<EcommerceWeb.Models.Account>
+
+@{
+    ViewData["Title"] = "Manage Account";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <span class="breadcrumb-item active">Manage Account</span>
+        </nav>
+    </div>
+</div>
+<h2 class="header-title">Manage Account</h2>
+<div class="card">
+    <div class="card-body">
+        <div class="row m-b-30">
+            <div class="col-lg-8">
+                <div class="d-md-flex">
+                    <div class="m-b-10 m-r-15">
+                        <select class="custom-select" style="min-width: 180px;">
+                            <option selected="">Catergory</option>
+                            <option value="all">All</option>
+                            <option value="homeDeco">Home Decoration</option>
+                            <option value="eletronic">Eletronic</option>
+                            <option value="jewellery">Jewellery</option>
+                        </select>
+                    </div>
+                    <div class="m-b-10">
+                        <select class="custom-select" style="min-width: 180px;">
+                            <option selected="">Status</option>
+                            <option value="all">All</option>
+                            <option value="inStock">In Stock </option>
+                            <option value="outOfStock">Out of Stock</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-right">
+                <button class="btn btn-primary">
+                    <i class="anticon anticon-plus-circle m-r-5"></i>
+                    <span>Add Product</span>
+                </button>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">FullName</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model) {
+                            <tr>
+                                <th scope="row">@item.AccountId</th>
+                                <td>@item.FullName</td>
+                                <td>@item.Email</td>
+                                <td>@item.Phone</td>
+                                <td>@item.Role</td>
+                                <td>
+                                    @if (@item.Active)
+                                    {
+                                        <div class="d-flex align-items-center">
+                                            <div class="badge badge-success badge-dot m-r-10"></div>
+                                            <div>Active</div>
+                                        </div>
+                                    }
+                                    else{
+                                        <div class="d-flex align-items-center">
+                                            <div class="badge badge-success badge-dot m-r-10"></div>
+                                            <div>Block</div>
+                                        </div>
+                                    }
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-tone m-r-5" asp-action="Edit" asp-route-id="@item.RoleId">Edit</a> |
+                                    <a class="btn btn-secondary btn-tone m-r-5" asp-action="Details" asp-route-id="@item.RoleId">Detail</a> |
+                                    <a class="btn btn-danger btn-tone m-r-5" asp-action="Delete" asp-route-id="@item.RoleId">Delete</a>
+                                </td>
+                            </tr>
+                        }     
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+</div>
+

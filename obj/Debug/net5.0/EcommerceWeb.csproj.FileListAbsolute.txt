@@ -195,3 +195,15 @@ C:\Users\Canhl\Project\EcommerceWeb\bin\Debug\net5.0\zh-Hant\Microsoft.VisualStu
 C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
 C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Views\Blog\Index.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Views\Product\Create.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Views\Product\Delete.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Views\Product\Details.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Views\Product\Edit.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\bin\Debug\net5.0\AspNetCoreHero.ToastNotification.Views.dll
+C:\Users\Canhl\Project\EcommerceWeb\bin\Debug\net5.0\AspNetCoreHero.ToastNotification.dll
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminAccount\Create.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminAccount\Delete.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminAccount\Details.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminAccount\Edit.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminAccount\Index.cshtml.g.cs
