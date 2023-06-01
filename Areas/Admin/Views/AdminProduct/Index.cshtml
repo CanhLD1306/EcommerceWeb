@@ -1,0 +1,88 @@
+@using PagedList.Core
+@model PagedList.Core.IPagedList<EcommerceWeb.Models.Product>
+
+@{  
+    int CurrentPage = ViewBag.CurrentPage;
+    ViewData["Title"] = "Manage Product" + CurrentPage;
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <span class="breadcrumb-item active">Manage Product  :  page @CurrentPage</span>
+        </nav>
+    </div>
+</div>
+<h2 class="header-title">Manage Product</h2>
+<div class="card">
+    <div class="card-body">
+        <div class="row m-b-30">
+            <div class="col-lg-8">
+                <div class="d-md-flex">
+                    <div class="m-b-10 m-r-15">
+                        <select class="custom-select" style="min-width: 180px;" id="idRole" name="idRole">
+                            <option value="0" disabled selected></option>
+                        </select>
+                    </div>
+                    <div class="m-b-10">
+                        <select class="custom-select" style="min-width: 180px;" id="idStatus" name="idStatus">
+                            <option value="" disabled selected></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Stock Left</th>
+                            <th scope="col">Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null)
+                        {
+                            @foreach (var item in Model) {
+                            <tr>
+                                <th scope="row">@item.ProductId</th>
+                                <td>@item.ProductName</td>
+                                <td>@item.Cat</td>
+                                <td>@item.Price</td>
+                                <td>@item.UnitslnStock</td>
+                                <td>@item.Active</td>
+                                <td>
+                                    <a class="btn btn-success btn-tone m-r-5" asp-action="Edit" asp-route-id="@item.ProductId">Edit</a> |
+                                    <a class="btn btn-secondary btn-tone m-r-5" asp-action="Details" asp-route-id="@item.ProductId">Detail</a> |
+                                    <a class="btn btn-danger btn-tone m-r-5" asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
+                                </td>
+                            </tr>
+                        }  
+                        }   
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+            <ul class="pagination">
+                <li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous">
+                    <a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                </li>
+                <li class="paginate_button page-item active">
+                    <a asp-area="Admin" asp-controller="AdminProduct" asp-action="Index" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                </li>
+                <li class="paginate_button page-item next disabled" id="DataTables_Table_0_next">
+                    <a href="#" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" class="page-link">Next</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

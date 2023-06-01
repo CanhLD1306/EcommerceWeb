@@ -207,3 +207,16 @@ C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\Adm
 C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminAccount\Details.cshtml.g.cs
 C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminAccount\Edit.cshtml.g.cs
 C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminAccount\Index.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\bin\Debug\net5.0\PagedList.dll
+C:\Users\Canhl\Project\EcommerceWeb\bin\Debug\net5.0\PagedList.Mvc.dll
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminCustomer\Create.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminCustomer\Delete.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminCustomer\Details.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminCustomer\Edit.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminCustomer\Index.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\bin\Debug\net5.0\PagedList.Core.dll
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminProduct\Create.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminProduct\Delete.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminProduct\Details.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminProduct\Edit.cshtml.g.cs
+C:\Users\Canhl\Project\EcommerceWeb\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminProduct\Index.cshtml.g.cs

@@ -27,7 +27,7 @@ using EcommerceWeb.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f744ca85ae49eaa158b8d41a99576d73071a3b97", @"/Areas/Admin/Views/AdminRole/Edit.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"afa8ce0873d3dda23076696d25bc24d6da7888c9", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f5249a33fefdd3e0deeb0ce203d397aa2d7821e5", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Admin_Views_AdminRole_Edit : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<EcommerceWeb.Models.Role>
     #nullable disable

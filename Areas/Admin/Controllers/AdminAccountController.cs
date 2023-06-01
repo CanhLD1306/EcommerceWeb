@@ -22,6 +22,14 @@ namespace EcommerceWeb.Areas.Admin.Controllers
         // GET: AdminAccount
         public async Task<IActionResult> Index()
         {
+            ViewData["AccessRights"] = new SelectList(_context.Roles, "RoleId", "RoleName");
+
+            List<SelectListItem> lsStatus = new List<SelectListItem>();
+            lsStatus.Add(new SelectListItem() {Text = "Actice", Value = "1"});
+            lsStatus.Add(new SelectListItem() {Text = "Block", Value = "0"});
+            ViewData["lsStatus"] = lsStatus;
+
+
             var dbEcommerceContext = _context.Accounts.Include(a => a.Role);
             return View(await dbEcommerceContext.ToListAsync());
         }

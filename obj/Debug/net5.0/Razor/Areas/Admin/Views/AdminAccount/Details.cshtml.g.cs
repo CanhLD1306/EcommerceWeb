@@ -27,7 +27,7 @@ using EcommerceWeb.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fb08b036e6175fb4af73ee36b8274bdc72239503", @"/Areas/Admin/Views/AdminAccount/Details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"afa8ce0873d3dda23076696d25bc24d6da7888c9", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f5249a33fefdd3e0deeb0ce203d397aa2d7821e5", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Admin_Views_AdminAccount_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<EcommerceWeb.Models.Account>
     #nullable disable
