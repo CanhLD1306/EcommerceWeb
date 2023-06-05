@@ -1,6 +1,7 @@
 <div class="side-nav">
     <div class="side-nav-inner">
         <ul class="side-nav-menu scrollable">
+            @* Dashboard *@
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="javascrip:void(0)">
                     <span class="icon-holder">
@@ -12,6 +13,8 @@
                     </span>
                 </a>
             </li>
+
+            @* Manage Order *@
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="javascrip:void(0)">
                     <span class="icon-holder">
@@ -23,6 +26,8 @@
                     </span>
                 </a>
             </li>
+
+            @* Manage Product *@
             <li class="nav-item dropdown">
                 <a asp-area="Admin" asp-controller="AdminProduct" asp-action="Index">
                     <span class="icon-holder">
@@ -31,6 +36,8 @@
                     <span class="title">Manage Product</span>
                 </a>
             </li>
+
+            @* Manage Customer *@
             <li class="nav-item dropdown">
                 <a asp-area="Admin" asp-controller="AdminCustomer" asp-action="Index">
                     <span class="icon-holder">
@@ -39,6 +46,8 @@
                     <span class="title">Manage Customer</span>
                 </a>
             </li>
+
+            @* Sale *@
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="javascrip:void(0)">
                     <span class="icon-holder">
@@ -50,6 +59,8 @@
                     </span>
                 </a>
             </li>
+
+            @* Manage System *@
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="javascrip:void(0)">
                     <span class="icon-holder">
@@ -65,7 +76,7 @@
                         <a asp-area="Admin" asp-controller="AdminAccount" asp-action="Index">Manage Account</a>
                     </li>
                     <li>
-                        <a asp-area="" asp-controller="" asp-action="">Manage Category</a>
+                        <a asp-area="Admin" asp-controller="AdminCategory" asp-action="Index">Manage Category</a>
                     </li>
                     <li>
                         <a asp-area="Admin" asp-controller="AdminRole" asp-action="Index">Manage Access</a>
@@ -75,6 +86,8 @@
                     </li>
                 </ul>
             </li>
+
+            @* Manage Blog *@
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="javascrip:void(0)">
                     <span class="icon-holder">
@@ -86,17 +99,18 @@
                     </span>
                 </a>
             </li>
+
+            @* Manage Page *@
             <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="javascrip:void(0)">
+                <a asp-area="Admin" asp-controller="AdminPage" asp-action="Index">
                     <span class="icon-holder">
                         <i class="anticon anticon-file"></i>
                     </span>
                     <span class="title">Manage Pages</span>
-                    <span class="arrow">
-                        <i class="arrow-icon"></i>
-                    </span>
                 </a>
             </li>
+
+            @* Manage Shipper *@
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="javascrip:void(0)">
                     <span class="icon-holder">

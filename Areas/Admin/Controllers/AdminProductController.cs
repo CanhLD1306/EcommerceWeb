@@ -33,6 +33,9 @@ namespace EcommerceWeb.Areas.Admin.Controllers
             PagedList<Product> models = new PagedList<Product>(lsProduct, pageNumber, pageSize);
             ViewBag.CurrentPage = pageNumber;
 
+            ViewData["Category"] = new SelectList(_context.Categories, "CatId", "CatName");
+            
+
             return View(models);
 
         }
@@ -59,7 +62,7 @@ namespace EcommerceWeb.Areas.Admin.Controllers
         // GET: AdminProduct/Create
         public IActionResult Create()
         {
-            ViewData["CatId"] = new SelectList(_context.Categories, "CatId", "CatId");
+            ViewData["Category"] = new SelectList(_context.Categories, "CatId", "CatName");
             return View();
         }
 
@@ -76,7 +79,7 @@ namespace EcommerceWeb.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CatId"] = new SelectList(_context.Categories, "CatId", "CatId", product.CatId);
+            ViewData["Category"] = new SelectList(_context.Categories, "CatId", "CatName", product.CatId);
             return View(product);
         }
 
@@ -93,7 +96,7 @@ namespace EcommerceWeb.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewData["CatId"] = new SelectList(_context.Categories, "CatId", "CatId", product.CatId);
+            ViewData["Category"] = new SelectList(_context.Categories, "CatId", "CatName", product.CatId);
             return View(product);
         }
 
@@ -129,7 +132,7 @@ namespace EcommerceWeb.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CatId"] = new SelectList(_context.Categories, "CatId", "CatId", product.CatId);
+            ViewData["Category"] = new SelectList(_context.Categories, "CatId", "CatName", product.CatId);
             return View(product);
         }
 
